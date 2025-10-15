@@ -20,7 +20,7 @@ export default function App() {
         <Contact />
       </main>
       <footer className="text-center text-sm text-gray-400 py-8 border-t border-neutral-900">
-        © {new Date().getFullYear()} Your Name — Built with React & Tailwind
+        © {new Date().getFullYear()} LazyYeou — Built with React & Tailwind
       </footer>
     </div>
   );
