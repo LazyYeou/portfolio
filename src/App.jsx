@@ -16,7 +16,7 @@ export default function App() {
         <Hero />
         <TechStack />
         <Showcase />
-        <Experience />
+        {/* <Experience /> */}
         <Contact />
       </main>
       <footer className="text-center text-sm text-gray-400 py-8 border-t border-neutral-900">

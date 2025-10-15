@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import profilePic from "../public/profile_pic.jpg"; 
+import profilePic from "../public/profile_pic.jpg";
 
 export default function Hero() {
   return (
@@ -18,29 +18,37 @@ export default function Hero() {
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 200 }}
           >
-            Building reliable software.{" "}
+            ABOUT ME{" "}
             <motion.span
               className="text-[var(--accent)]"
               whileHover={{
                 textShadow: "0px 0px 8px var(--accent)",
                 scale: 1.05,
               }}
-            >
-              Efficiently.
-            </motion.span>
+            />
           </motion.h1>
 
-          <motion.p
-            className="mt-6 text-gray-300"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.6 }}
+          {/* About Box */}
+          <motion.div
+            className="mt-6 bg-black/30 border border-white/10 backdrop-blur-sm rounded-lg p-5 shadow-lg"
+            whileHover={{
+              scale: 1.03,
+              boxShadow: "0 0 25px rgba(255, 255, 255, 0.3)",
+              borderColor: "rgba(255, 255, 255, 0.4)",
+              y: -4,
+            }}
+            transition={{ type: "spring", stiffness: 200 }}
           >
-            I'm a college student & software developer focusing on web apps,
-            open-source, and learning low-level systems. I like clean UI, simple
-            architecture, and shipping small projects that solve real problems.
-          </motion.p>
+            <p className="text-gray-300 leading-relaxed">
+              Hi, I'm <b>Muhammad Ridwan Nasir Firdaus</b> aka <b>LazyYeou</b>, a Bandung Institute of Technology first year student and developer passionate about creating impactful software. My main interests lie in <b>software engineering, artificial intelligence, and game development.</b>
+            </p>
+            <br />
+            <p className="text-gray-300 leading-relaxed">
+              I enjoy exploring how code can bring ideas to life—from building functional web apps to developing engaging games. I'm always eager to learn new technologies and improve my skills through hands-on projects and collaboration.
+            </p>
+          </motion.div>
 
+          {/* Buttons */}
           <motion.div
             className="mt-6 flex gap-4"
             initial={{ opacity: 0 }}

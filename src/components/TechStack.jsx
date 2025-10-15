@@ -7,15 +7,25 @@ import {
   SiReact,
   SiGit,
   SiNodedotjs,
+  SiAseprite,
+  SiBlender,
+  SiTailwindcss,
+  SiGithub,
+  SiTypescript,
 } from "react-icons/si";
 
 const techs = [
   { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
-  { name: "Python", icon: <SiPython className="text-blue-400" /> },
+  { name: "TypeScript", icon: <SiTypescript className="text-blue-400" /> },
+  { name: "Python", icon: <SiPython className="text-blue-300" /> },
   { name: "Unity", icon: <SiUnity className="text-gray-300" /> },
   { name: "React", icon: <SiReact className="text-cyan-400" /> },
+  { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-400" /> },
   { name: "Git", icon: <SiGit className="text-orange-400" /> },
-  { name: "Node.js", icon: <SiNodedotjs className="text-green-400" /> },
+  { name: "GitHub", icon: <SiGithub className="text-white" /> },
+  { name: "Node.js", icon: <SiNodedotjs className="text-green-500" /> },
+  { name: "Aseprite", icon: <SiAseprite className="text-gray-200" /> },
+  { name: "Blender", icon: <SiBlender className="text-orange-500" /> },
 ];
 
 export default function TechStack() {
@@ -28,20 +38,23 @@ export default function TechStack() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          Tech Stack
+          Technologies I Use
         </motion.h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center">
+        <div className="flex flex-wrap justify-center gap-4">
           {techs.map((tech, index) => (
             <motion.div
               key={tech.name}
-              className="flex items-center justify-start gap-3 bg-black text-white border border-neutral-800 px-4 py-3 rounded-lg w-48 hover:border-white/40 transition-colors duration-200"
+              className="flex items-center justify-start gap-3 bg-black text-white border border-neutral-800 px-4 py-3 rounded-lg hover:border-white/40 transition-colors duration-200"
+              style={{ width: "fit-content", minWidth: "max-content" }}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.4 }}
             >
               <div className="text-2xl flex-shrink-0">{tech.icon}</div>
-              <p className="font-medium text-gray-200 text-sm">{tech.name}</p>
+              <p className="font-medium text-gray-200 text-sm whitespace-nowrap">
+                {tech.name}
+              </p>
             </motion.div>
           ))}
         </div>
