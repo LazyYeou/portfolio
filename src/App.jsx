@@ -7,7 +7,7 @@ import Showcase from "./components/Showcase";
 import Contact from "./components/Contact";
 
 export default function App() {
-  const [theme, setTheme] = useState("dark"); // keep if you want toggle later
+  const [theme, setTheme] = useState("dark"); 
 
   return (
     <div className={`min-h-screen ${theme === "dark" ? "bg-neutral-950 text-white" : "bg-white text-black"}`}>
