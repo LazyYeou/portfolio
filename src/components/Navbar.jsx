@@ -7,7 +7,7 @@ export default function Navbar() {
         <div className="text-xl font-semibold tracking-wide">LazyYeou</div>
         <div className="hidden md:flex gap-6 text-sm text-gray-300">
           <a href="#projects" className="hover:text-white">Projects</a>
-          {/* <a href="#experience" className="hover:text-white">Experience</a> */}
+          
           <a href="#contact" className="hover:text-white">Contact</a>
         </div>
         <div className="md:hidden text-gray-300 text-sm">Menu</div>

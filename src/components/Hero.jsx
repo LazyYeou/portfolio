@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="pt-8 pb-20 text-white">
       <div className="md:flex md:items-center md:justify-between gap-8">
-        {/* Left Text Section */}
+        
         <motion.div
           className="max-w-2xl"
           initial={{ opacity: 0, y: 30 }}
@@ -28,7 +28,7 @@ export default function Hero() {
             />
           </motion.h1>
 
-          {/* About Box */}
+          
           <motion.div
             className="mt-6 bg-black/30 border border-white/10 backdrop-blur-sm rounded-lg p-5 shadow-lg"
             whileHover={{
@@ -48,7 +48,7 @@ export default function Hero() {
             </p>
           </motion.div>
 
-          {/* Buttons */}
+          
           <motion.div
             className="mt-6 flex gap-4"
             initial={{ opacity: 0 }}
@@ -75,7 +75,7 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* Right Profile Image */}
+        
         <motion.div
           className="mt-12 md:mt-0 flex-shrink-0 relative"
           initial={{ opacity: 0, x: 30 }}

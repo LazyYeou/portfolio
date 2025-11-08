@@ -49,12 +49,10 @@ const Timeline = () => {
               {/* Title */}
               <h3 className="text-xl font-semibold mt-1">{event.title}</h3>
 
-              {/* Description */}
               <p className="text-gray-400 mt-2 group-hover:text-gray-200 transition-all duration-300">
                 {event.desc}
               </p>
 
-              {/* Tooltip box */}
               <div className="absolute left-8 top-0 opacity-0 group-hover:opacity-100 bg-neutral-900 border border-blue-500 text-sm text-gray-300 rounded-lg p-3 shadow-lg w-64 transform -translate-y-1/2 transition-all duration-300">
                 <p className="text-blue-400 font-semibold">{event.title}</p>
                 <p className="text-xs mt-1">{event.desc}</p>
