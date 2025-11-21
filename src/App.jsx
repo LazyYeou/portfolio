@@ -5,6 +5,7 @@ import TechStack from "./components/TechStack";
 import Experience from "./components/Experience";
 import Showcase from "./components/Showcase";
 import Contact from "./components/Contact";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   const [theme, setTheme] = useState("dark"); 
